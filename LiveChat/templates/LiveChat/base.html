@@ -1,0 +1,16 @@
+{% load static %}
+
+{% block content %}
+<div class="chat-window">
+    <!-- Messages will be dynamically inserted here by JavaScript -->
+</div>
+
+<form id="chat-form" method="post">
+    {% csrf_token %}
+    <input type="text" name="message" placeholder="Type Here...">
+    <button type="submit">Send</button>
+</form>
+
+<script src="{% static 'js/chat.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+{% endblock %}

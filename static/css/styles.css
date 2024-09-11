@@ -1,0 +1,44 @@
+.chat-window {
+    border: 1px solid #ccc;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    
+}
+.right {
+    justify-content: flex-start;
+}
+.left {
+    justify-content: flex-end;
+}
+.msg {
+    max-width:70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    clear: both;
+}
+.sent {
+    width: 70%;
+    background-color: #e6f3ff;
+    align-self: flex-end;
+    float: left;
+}
+
+.received {
+    
+    background-color: #3498db; /* Blue color for received messages */
+    color: white; /* White text for better contrast on blue background */
+    float: right;
+    align-self: flex-start;
+}
